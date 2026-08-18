@@ -65,3 +65,34 @@ window.addEventListener('scroll', () => {
   sections.forEach(section => { if (y >= section.offsetTop) current = section.id; });
   navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${current}`));
 }, { passive: true });
+
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if (menuBtn && mobileMenu) {
+  // Bật / tắt menu khi bấm nút ☰
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen);
+    menuBtn.innerHTML = isOpen ? '✕' : '☰'; // Đổi icon từ ☰ sang ✕ khi mở
+  });
+
+  // Tự động đóng menu khi bấm vào bất kỳ link nào
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.innerHTML = '☰';
+    });
+  });
+
+  // Đóng menu khi người dùng bấm ra ngoài bảng menu
+  document.addEventListener('click', (e) => {
+    if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.innerHTML = '☰';
+    }
+  });
+}
