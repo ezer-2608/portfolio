@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân - công nghệ, lập trình và các dự án web.">
+  <title>Portfolio | Công nghệ & Sáng tạo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <!-- NAVBAR: lấy cấu trúc chính từ khung Portfolio -->
+  <header class="navbar" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#home"><span>BINH'S</span>PORTFOLIO<span class="dot">.</span></a>
+
+      <nav class="desktop-nav" aria-label="Điều hướng chính">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="#contact">Let's Talk <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileMenu" aria-label="Menu điện thoại">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="status"><span class="status-dot"></span> Available for creative projects</div>
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1><span class="gradient-text">Bình</span><br>I'm a <span class="typing" id="typing">Developer</span></h1>
+          <p class="hero-text">
+            Tôi yêu thích công nghệ, lập trình và thiết kế những sản phẩm số hiện đại —
+            đơn giản, trực quan và có trải nghiệm người dùng tốt.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án <span>→</span></a>
+            <a class="btn btn-ghost" href="#contact">Liên hệ <span>↗</span></a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <span>/</span><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+            <span>/</span><a href="mailto:huybinh000002@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="profile-card glass">
+            <div class="profile-top"><span>01 / PROFILE</span><span class="live-dot"></span></div>
+            <div class="avatar-wrap"><img src="avt.jpg" alt="Ảnh đại diện"></div>
+            <h2>ezer·加斯特</h2>
+            <p>Developer · Designer · Technology Enthusiast</p>
+            <div class="mini-tags"><span>HTML</span><span>CSS</span><span>JS</span><span>AI</span></div>
+          </div>
+          <div class="floating-chip chip-1">&lt;/&gt; BUILD</div>
+          <div class="floating-chip chip-2">AI × CREATIVITY</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>Một chút về tôi</h2>
+          <p>Portfolio là nơi tôi giới thiệu bản thân và showcase những gì đã học thành sản phẩm có thể nhìn thấy, dùng thử và chia sẻ.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass about-card reveal">
+            <span class="number">01</span>
+            <h3>Biến ý tưởng thành sản phẩm</h3>
+            <p>Tôi thích bắt đầu từ một ý tưởng đơn giản, lên concept, dựng giao diện rồi biến nó thành một website hoàn chỉnh.</p>
+            <p>Tôi cũng quan tâm đến cách công nghệ ảnh hưởng đến việc học tập, sáng tạo và cuộc sống hằng ngày.</p>
+          </article>
+          <div class="stats-grid reveal">
+            <div class="stat"><strong>10+</strong><span>Projects</span></div>
+            <div class="stat"><strong>5+</strong><span>Technologies</span></div>
+            <div class="stat"><strong>100%</strong><span>Passion</span></div>
+            <div class="stat"><strong>∞</strong><span>Ideas</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SKILLS</p>
+          <h2>Những gì tôi có thể làm</h2>
+          <p>Tập trung vào nền tảng web, UI/UX và tận dụng AI như một trợ lý trong quá trình phát triển.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card glass reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Web Development</h3><p>Xây dựng giao diện responsive, semantic và có tương tác mượt.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind</span></div></article>
+          <article class="skill-card glass reveal"><div class="skill-icon">◈</div><h3>UI / UX</h3><p>Thiết kế bố cục rõ ràng, ưu tiên khả năng đọc và trải nghiệm người dùng.</p><div class="tags"><span>Figma</span><span>Layout</span><span>Responsive</span></div></article>
+          <article class="skill-card glass reveal"><div class="skill-icon">AI</div><h3>AI Workflow</h3><p>Dùng AI để brainstorm, viết nội dung, debug, tối ưu và thử nghiệm ý tưởng nhanh hơn.</p><div class="tags"><span>Prompting</span><span>Research</span><span>Debug</span></div></article>
+          <article class="skill-card glass reveal"><div class="skill-icon">↗</div><h3>Deploy & Share</h3><p>Đưa sản phẩm từ máy local lên môi trường online để có thể trình bày và chia sẻ.</p><div class="tags"><span>Git</span><span>Vercel</span><span>Deployment</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><p class="eyebrow">SELECTED PROJECTS</p><h2>Một vài sản phẩm</h2></div>
+          <p>Ưu tiên những sản phẩm nhỏ nhưng hoàn chỉnh: có ý tưởng, giao diện, nội dung và trải nghiệm.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass reveal featured">
+            <div class="project-media media-ai"><span class="media-label">01 / AI × EDUCATION</span><div class="media-symbol">AI</div></div>
+            <div class="project-body"><p class="project-type">WEB DEVELOPMENT</p><h3>AI Learning Hub</h3><p>Concept website về ứng dụng AI trong giáo dục: học tập cá nhân hóa, tiếp cận kiến thức và phát triển kỹ năng.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#journal">Xem concept →</a></div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-media media-network"><span class="media-label">02 / INTERNET</span><div class="media-symbol">∞</div></div>
+            <div class="project-body"><p class="project-type">EDITORIAL WEB</p><h3>Global Connection</h3><p>Trang nội dung về Internet, kết nối toàn cầu và cách công nghệ xóa bỏ khoảng cách địa lý.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div><a href="#journal">Đọc bài →</a></div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-media media-future"><span class="media-label">03 / FUTURE</span><div class="media-symbol">✦</div></div>
+            <div class="project-body"><h3>Science & Future</h3><p>Khám phá robot, xe tự lái, IoT và những khả năng mà công nghệ mở ra cho tương lai.</p><div class="tags"><span>Research</span><span>UI/UX</span><span>AI</span></div><a href="#journal">Khám phá →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-copy reveal"><p class="eyebrow">CONTACT</p><h2>Let's build something.</h2><p>Nếu bạn muốn trao đổi về một ý tưởng web, một bài tập công nghệ hoặc một project nhỏ, hãy gửi tin nhắn.</p><div class="contact-links"><a href="mailto:yourmail@gmail.com">huybinh000002@gmail.com <span>↗</span></a><a href="https://github.com/ezer-2608" target="_blank" rel="noopener">GitHub <span>↗</span></a><a href="https://www.facebook.com/BsimpKurumi" target="_blank" rel="noopener">Facebook <span>↗</span></a></div></div>
+          <form class="contact-form glass reveal" id="contactForm">
+            <label for="name">Họ tên</label><input id="name" type="text" placeholder="Tên của bạn" required>
+            <label for="email">Email</label><input id="email" type="email" placeholder="you@example.com" required>
+            <label for="message">Tin nhắn</label><textarea id="message" rows="5" placeholder="Viết lời nhắn..." required></textarea>
+            <button class="btn btn-primary full" type="submit">Gửi tin nhắn <span>→</span></button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><p>© 2026 Bình Built with curiosity & code.</p><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
